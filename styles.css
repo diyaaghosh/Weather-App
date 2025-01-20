@@ -327,135 +327,62 @@ body{
     display: block;
 }
 
-/* Mobile phones (portrait and landscape) */
-@media (max-width: 600px) {
-    body {
-        flex-direction: column;
-        padding: 10px;
-    }
 
+@media (max-width: 600px) {
     #demo {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
+        width: 90%;
     }
 
     #title {
-        margin: 0 auto;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #Row1 {
         flex-direction: column;
-        align-items: center;
-        margin: 20px auto;
     }
 
-    #city-input, #Searchbutton {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    #weather-info {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    #music-control, #unit-toggle {
-        width: 100%;
+    #city-input,
+    #Searchbutton {
+        width: 90%;
     }
 
     #switch {
-        width: 100%;
+        font-size: 12px;
+        padding: 8px;
     }
 }
 
 /* Tablets (portrait and landscape) */
-@media (min-width: 601px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     #demo {
         width: 80%;
     }
 
     #Row1 {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    #city-input, #Searchbutton {
-        width: 80%;
-    }
-
-    #weather-info {
-        width: 80%;
-    }
-
-    #music-control, #unit-toggle {
-        width: 80%;
-    }
-
-    #switch {
-        width: 80%;
-    }
-}
-
-/* Laptops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #demo {
-        width: 70%;
-    }
-
-    #Row1 {
-        justify-content: center;
+        flex-direction: row;
         gap: 15px;
     }
 
-    #city-input, #Searchbutton {
-        width: 70%;
-    }
-
-    #weather-info {
-        width: 70%;
-    }
-
-    #music-control, #unit-toggle {
-        width: 70%;
-    }
-
-    #switch {
-        width: 70%;
+    #city-input,
+    #Searchbutton {
+        width: 45%;
     }
 }
 
-/* Desktops */
+/* Desktops and laptops */
 @media (min-width: 1025px) {
-    body {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-
     #demo {
-        width: 60%;
+        width: 520px;
     }
 
     #Row1 {
-        justify-content: space-between;
+        flex-direction: row;
         gap: 20px;
     }
 
-    #city-input, #Searchbutton {
-        width: 60%;
-    }
-
-    #weather-info {
-        width: 60%;
-    }
-
-    
-
-    #switch {
-        width: 60%;
+    #city-input,
+    #Searchbutton {
+        width: 45%;
     }
 }
+
