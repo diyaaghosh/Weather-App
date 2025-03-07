@@ -328,36 +328,120 @@ body{
 }
 
 
-@media (max-width: 600px) {
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
     #demo {
-        width: 90%;
+        width: 95%;
+        height: auto;
+        margin-top: 70px;
     }
 
     #title {
         font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px;  
+        background-color: #f0f0f0; 
+        border-radius: 10px;
+        width: 80%; 
+        margin: 0 auto 20px; 
+    }
+
+    #switch {
+        width: 30%;
+        height: 25px; 
+        margin-bottom: 10px;
+        margin-top: 0px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #Row1 {
-        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center; 
     }
 
     #city-input,
     #Searchbutton {
-        width: 90%;
+        width: 43%;
+        height: 40%;
+        margin-left: 10px; 
     }
 
-    #switch {
-        font-size: 12px;
-        padding: 8px;
+    #Searchbutton {
+        font-size: 14px;
+        height: 25px; 
+    }
+
+    #weather-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 20px;
     }
 }
 
-/* Tablets (portrait and landscape) */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* Tablets (Portrait: 481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
     #demo {
-        width: 80%;
+        width: 95%;
+        height: auto;
     }
 
+    #Row1 {
+        flex-direction: row;
+        gap: 10px;
+    }
+    #title {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px;  
+        background-color: #f0f0f0; 
+        border-radius: 10px;
+        width: 50%; 
+        margin: 0 auto 20px; 
+    }
+    #weather-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    #city-input,
+    #Searchbutton {
+        margin-top: 20px;
+        width: 45%;
+    }
+}
+
+/* Tablets (Landscape) & Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #demo {
+        width: 75%;
+    }
+    #title {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px;  
+        background-color: #f0f0f0; 
+        border-radius: 10px;
+        width: 50%; 
+        margin: 0 auto 20px; 
+    }
     #Row1 {
         flex-direction: row;
         gap: 15px;
@@ -365,11 +449,11 @@ body{
 
     #city-input,
     #Searchbutton {
-        width: 45%;
+        width: 50%;
     }
 }
 
-/* Desktops and laptops */
+/* Laptops & Desktops (1025px and above) */
 @media (min-width: 1025px) {
     #demo {
         width: 520px;
@@ -385,4 +469,5 @@ body{
         width: 45%;
     }
 }
+
 
