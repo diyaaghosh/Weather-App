@@ -47,5 +47,5 @@ A responsive, user-friendly weather application built with **HTML**, **CSS**, an
 
 3. Enter any city name to get live weather updates!
 
- ## API Used : OpenWeatherMap API
+  API Used : OpenWeatherMap API
 
